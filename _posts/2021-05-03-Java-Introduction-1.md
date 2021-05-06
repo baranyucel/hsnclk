@@ -1,7 +1,7 @@
 ---
-title: "Java'da Polimorfizm 4.3 - Dinamik Bağlanma Örnek"
+title: "Java'ya Giriş 1.1"
 comments: true
-excerpt: "Bu bölümde, dinamik bağlanmayla ilgili bir örnek verecek, konunun daha iyi anlaşılmasını sağlayacağız "
+excerpt: "Bu bölümde, Nesne Yönelimli Programlama, Java yazım jargonu ve Java'nın nasıl çalıştığından bahsedeceğim."
 header:
   teaser: "assets/images/equality.png"
   og_image: /assets/images/page-header-og-image.png
@@ -19,6 +19,7 @@ tags:
 last_modified_at: 2020-02-19T15:12:19-04:00
 toc: true
 toc_label: "SAYFA İÇERİĞİ"
+author: Baran Yücel
 ---
 
 
