@@ -27,7 +27,10 @@ author: Baran Yücel
 **ÖNEMLİ :** Kendim için aldığım notlar. Umarım size de bir faydası olur. Kullanılan her bir makale referans olarak eklenmiştir.
 {: .notice}
 
-Bu bölümde Java'da dinamik bağlanmayı bir örnekle pekiştireceğiz. Önceki bölümlerde olduğu gibi bir adet Person, bir adet de Person sınıfını miras alan Student sınıfımız bulunmaktadır.
+## Nesne Yönelimli Programlama
+
+1960'lı yılların sonuna doğru ortaya çıkan bu yaklaşım, o dönemin yazılım dünyasında beliren bir bunalımın sonucudur. Yazılımların karmaşıklığı ve boyutları sürekli artıyor, ancak belli bir nitelik düzeyi korumak için gereken bakımın maliyeti zaman ve çaba olarak daha da hızlı artıyordu.
+NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazılımda modularity i benimsemesidir.  Programlar artık ayrı dosyalar halinde düzenlenebilir hale gelmiştir. 
 
 
 ## Örnek
