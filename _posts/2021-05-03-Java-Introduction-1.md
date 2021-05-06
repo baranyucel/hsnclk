@@ -30,7 +30,16 @@ author: Baran Yücel
 ## Nesne Yönelimli Programlama
 
 1960'lı yılların sonuna doğru ortaya çıkan bu yaklaşım, o dönemin yazılım dünyasında beliren bir bunalımın sonucudur. Yazılımların karmaşıklığı ve boyutları sürekli artıyor, ancak belli bir nitelik düzeyi korumak için gereken bakımın maliyeti zaman ve çaba olarak daha da hızlı artıyordu.
-NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazılımda modularity i benimsemesidir.  Programlar artık ayrı dosyalar halinde düzenlenebilir hale gelmiştir. 
+NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazılımda modularity i benimsemesidir.  Programlar artık ayrı dosyalar halinde düzenlenebilir hale gelmiştir.
+
+
+Kısaca nesne yönelimli programlama 4 temel özelliği kendisinde bulundurur.
+
+1. **Soyutlama (Abstraction):** Bir sınıfın özelliklerinin ve davranışlarının tanımlanmasına denir. Örneğin: Bir kişinin adı, soyadı, yaşı, boyu, kilosu, saç rengi gibi özellikleridir. Kişinin yetenekleri davranışları içerisinde yer alır ve metotlar ile saklanır.
+2. **Kapsülleme (Encapsulation):** Davranış ve özellikler sınıfta soyutlanır ve saklanır. Kapsülleme ile hangi özellik ve davranışın dışarıdan kullanılacağını belirleyebiliriz. Örneğin: Kişinin bizi ilgilendirmeyen kısımlarını private ederek yani saklayarak gizleyebiliriz. Bu olaya kapsülleme adı verilir.
+3. **Miras Alma:** Alt ve üst sınıfın ortak özelliklerinden alabilme sistemine Miras Alma denir. Örneğin; Bir nesneni diğer bir nesne ile ortak özelliklerindeki verileri alabilir.
+4. **Çok Biçimlilik:** Alt Sınıf ve Üst Sınıfın özelliklerinden farklı şekilde davranışlar göstermesine Çok Biçimlilik denir. Örneğin; Bir nesnenin diğer bir nesneyle ortak özellikleri olmasına rağmen farklı özelliklerininde tanımlanabilmesine denir.
+Java, C ++ ve C # gibi popüler modern dillerin tümü nesneler temel alınarak oluşturulmuştur.
 
 
 ## Örnek
