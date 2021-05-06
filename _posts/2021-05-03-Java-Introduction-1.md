@@ -36,6 +36,16 @@ NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazı
 Kısaca nesne yönelimli programlama 4 temel özelliği kendisinde bulundurur.
 
 1. **Soyutlama (Abstraction):** Bir sınıfın özelliklerinin ve davranışlarının tanımlanmasına denir. Örneğin: Bir kişinin adı, soyadı, yaşı, boyu, kilosu, saç rengi gibi özellikleridir. Kişinin yetenekleri davranışları içerisinde yer alır ve metotlar ile saklanır.
+
+```sh
+public class Animal {
+    public String age;
+    public String name;
+    void kokuAl(){}
+    void yonBul(){}
+}
+```
+
 2. **Kapsülleme (Encapsulation):** Davranış ve özellikler sınıfta soyutlanır ve saklanır. Kapsülleme ile hangi özellik ve davranışın dışarıdan kullanılacağını belirleyebiliriz. Örneğin: Kişinin bizi ilgilendirmeyen kısımlarını private ederek yani saklayarak gizleyebiliriz. Bu olaya kapsülleme adı verilir.
 3. **Miras Alma:** Alt ve üst sınıfın ortak özelliklerinden alabilme sistemine Miras Alma denir. Örneğin; Bir nesneni diğer bir nesne ile ortak özelliklerindeki verileri alabilir.
 4. **Çok Biçimlilik:** Alt Sınıf ve Üst Sınıfın özelliklerinden farklı şekilde davranışlar göstermesine Çok Biçimlilik denir. Örneğin; Bir nesnenin diğer bir nesneyle ortak özellikleri olmasına rağmen farklı özelliklerininde tanımlanabilmesine denir.
