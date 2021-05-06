@@ -30,7 +30,7 @@ author: Baran Yücel
 ## Nesne Yönelimli Programlama
 
 1960'lı yılların sonuna doğru ortaya çıkan bu yaklaşım, o dönemin yazılım dünyasında beliren bir bunalımın sonucudur. Yazılımların karmaşıklığı ve boyutları sürekli artıyor, ancak belli bir nitelik düzeyi korumak için gereken bakımın maliyeti zaman ve çaba olarak daha da hızlı artıyordu.
-NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazılımda modularity i benimsemesidir.  Programlar artık ayrı dosyalar halinde düzenlenebilir hale gelmiştir.
+NYP'yi bu soruna karşı bir çözüm haline getiren başlıca özelliği, yazılımda modularity i benimsemesidir.  Programlar artık ayrı dosyalar halinde düzenlenebilir hale gelmiştir. Java, C ++ ve C # gibi popüler modern dillerin tümü nesneler temel alınarak oluşturulmuştur.
 
 
 Kısaca nesne yönelimli programlama 4 temel özelliği kendisinde bulundurur.
@@ -45,28 +45,46 @@ public class Animal {
     void yonBul(){}
 }
 ```
+Örnekte görüldüğü üzere Animal isimli bir class oluşturdum ve içerisine age, name gibi özellikler ekledim.
 
 2. **Kapsülleme (Encapsulation):** Davranış ve özellikler sınıfta soyutlanır ve saklanır. Kapsülleme ile hangi özellik ve davranışın dışarıdan kullanılacağını belirleyebiliriz. Örneğin: Kişinin bizi ilgilendirmeyen kısımlarını private ederek yani saklayarak gizleyebiliriz. Bu olaya kapsülleme adı verilir.
+
+```sh
+public class Cat extends Animal{
+    public String size;
+    private String yas;
+    void kokuAl(){
+        System.out.println("ben kediyim koku almak benim işim değil");
+    }
+}
+```
+Örnekte görüldüğü gibi Cat class ı içerisinde yas değişkenimi private hale getirerek bu özelliğin gizlenmesini yani kullanılmamasını sağladım.
+
 3. **Miras Alma:** Alt ve üst sınıfın ortak özelliklerinden alabilme sistemine Miras Alma denir. Örneğin; Bir nesneni diğer bir nesne ile ortak özelliklerindeki verileri alabilir.
+
+```sh
+public class Animal {
+    public String age;
+    public String name;
+    void kokuAl(){}
+    void yonBul(){}
+}
+```
+Animal class ım Dog ve Cat adlı iki farklı class için belirli özellikler taşıyor. Dog ve Cat classları Animaldan miras alıyor.
+
 4. **Çok Biçimlilik:** Alt Sınıf ve Üst Sınıfın özelliklerinden farklı şekilde davranışlar göstermesine Çok Biçimlilik denir. Örneğin; Bir nesnenin diğer bir nesneyle ortak özellikleri olmasına rağmen farklı özelliklerininde tanımlanabilmesine denir.
-Java, C ++ ve C # gibi popüler modern dillerin tümü nesneler temel alınarak oluşturulmuştur.
 
-
-## Örnek
-
-<script src="https://gist.github.com/cortix/f98aeec7543ade829c8a9ad4f1611f32.js"></script>
-
-<script src="https://gist.github.com/cortix/0ff89c934e5886b8fdab890b98a31c8e.js"></script>
-
-
-``p`` bir Person referansı olsa da, başvurduğu asıl nesne çalışma zamanında Student sınıfına ait olacaktır. Yani ``p.status(1)`` çağrısını yaptığımızda status metodunu çağırmak için Java'nın ilk bakacağı yer Student sınıfı olacaktır. Fakat Student sınıfında böyle bir metodun olmadığını görüyoruz. Fakat Student sınıfı Person sınıfını miras aldığı için, Java bir de Person sınıfına bakacaktır. Person sınıfında status metodunu bulduk. Kaldığımız yerden devam edebiliriz.
-
-
-status metodunun içine girdiğimizde karşımıza bir if-else ifadesi çıkmaktadır. Burada ``this.isReady(num)`` ifadesi ile karşılaşıyoruz. Peki Person sınıfı içinde ``this`` anahtar kelimesi ne anlama geliyor? ``this`` anahtar kelimesi ile çağırmaya çalıştığımız metot, Person sınıfının içindeki ``isReady`` metodu mu? yoksa Student sınıfı içinde bulunan ``isReady`` metodu mu? Kodu çözümlerken şu anda Person sınıfında olsak da, ``this`` anahtar kelimes çalışma zamanında Student nesnesini temsil etmektedir. Yani ``this`` dinamik olarak Student nesnesine bağlanır. Bu sebepten ötürü tekrardan Student sınıfına dönmemiz gerekecektir. Burada isReady metodu **1>0** dan büyük olduğu için ``true`` bir yanıt döndürecektir. Sonuç ``true`` döndüğü için Person sınıfı içindeki if bloğu içine girecek ve aşağıdaki sonucu alacağız.
-
+```sh
+public class Cat extends Animal{
+    public String size;
+    private String yas;
+    void kokuAl(){
+        System.out.println("ben kediyim koku almak benim işim değil");
+    }
+}
 ```
-I am ready: Hasan
-```
+Bu örnekte Cat class ı değerlerini Animaldan alır. Ancak değerini Animaldan alan diğer class lardan farklı olarak kokuAl değişkeni içerisinde farklı bir değer taşır.
+
 
 ## this Anahtar kelimesi
 
